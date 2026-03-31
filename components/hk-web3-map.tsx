@@ -110,9 +110,9 @@ export function HkWeb3Map() {
   const mapCompanies = useMemo((): Company[] => {
     const base =
       filteredCompanies.length > 0 ? filteredCompanies : [selectedCompany]
-    const boss = COMPANIES.find((c) => c.slug === YC_BOSS_SLUG)
+    const boss = COMPANIES.find((c) => c.slug === HK_BOSS_SLUG)
 
-    if (!boss || base.some((c) => c.slug === YC_BOSS_SLUG)) {
+    if (!boss || base.some((c) => c.slug === HK_BOSS_SLUG)) {
       return base
     }
 
